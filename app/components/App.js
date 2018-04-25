@@ -8,6 +8,7 @@ var Home = require('./Home');
 var Battle = require('./Battle');
 var Popular = require('./Popular');
 var QoutePage = require('./QoutePage')
+var Results = require('./Results')
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
 
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route path='/battle/results' component={Results} />
             <Route exact path='/battle' component={Battle} />
             <Route path='/popular' component={Popular} />
             <Route path='/qoute' component={QoutePage} />
